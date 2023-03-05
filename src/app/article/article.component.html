@@ -9,21 +9,38 @@
         </div>
         <p>{{ article_description }}</p>
 
-        <hr>
         <div *ngFor="let item of items">
-            
+            <hr>
             <a class="item-title" routerLink="/article/furniture" routerLinkActive="active"><h1>{{ item.name }}</h1></a>
 
             <a><img class="item-img" src="https://m.media-amazon.com/images/I/41FYkVPzrIL.jpg" alt=""></a>
             <p>{{ item.description }}</p>
-            <h3>Pros</h3>
-            <ol>
-                <li *ngFor="let pro of item.pros">{{ pro }}</li>
-            </ol>
-            <h3>Cons</h3>
-            <ol>
-                <li *ngFor="let con of item.cons">{{ con }}</li>
-            </ol>
+
+            <div class="center">
+                <button class="button-56" role="button">Find on Amazon</button>
+            </div>
+            
+            <div class="stack-cards">
+
+                <div class="card" id="pro-card">
+                    <div class="card-container">
+                      <h4><b>Pros</b></h4>
+                      <ol>
+                        <li *ngFor="let pro of item.pros">{{ pro }}</li>
+                    </ol>
+                    </div>
+                </div>
+
+                <div class="card" id="con-card">
+                    <div class="card-container">
+                      <h4><b>Cons</b></h4>
+                      <ol>
+                        <li *ngFor="let con of item.cons">{{ con }}</li>
+                    </ol>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
     </div>

@@ -1,3 +1,6 @@
+@import './assets/global-styles/action-button.scss';
+@import './assets/global-styles/cards.scss';
+
 /* You can add global styles to this file, and also import other style files */
 body {
     margin: 0;
@@ -28,6 +31,11 @@ hr {
     width: 600px;
     font-size: 1.125rem;
     line-height: 1.875rem;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
   }
 
   @media screen and (max-width: 768px) {

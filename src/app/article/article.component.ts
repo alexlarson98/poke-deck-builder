@@ -14,6 +14,10 @@ export class ArticleComponent implements OnInit {
     {name: 'HP OfficeJet Pro 9015e', description: 'The HP OfficeJet Pro 9015e is a versatile all-in-one inkjet printer designed for small to medium-sized businesses. It can print, scan, copy, and fax documents, and offers high-quality printing with up to 4800 x 1200 dpi resolution. It has a 35-page automatic document feeder, supports a variety of connectivity options, and has several security features. However, it has some drawbacks such as high ink costs, slow print speed, and limited paper capacity. Overall, the HP OfficeJet Pro 9015e is a solid choice for businesses looking for a reliable and versatile printer.',
     pros: ['All-in-one functionality','High-quality printing','Connectivity options','Security features','Energy efficient'],
     cons: ['High ink costs','Slow print speed','Limited paper capacity','Paper handling issues','Limited durability']
+  },
+  {name: 'HP OfficeJet Pro 9015e', description: 'The HP OfficeJet Pro 9015e is a versatile all-in-one inkjet printer designed for small to medium-sized businesses. It can print, scan, copy, and fax documents, and offers high-quality printing with up to 4800 x 1200 dpi resolution. It has a 35-page automatic document feeder, supports a variety of connectivity options, and has several security features. However, it has some drawbacks such as high ink costs, slow print speed, and limited paper capacity. Overall, the HP OfficeJet Pro 9015e is a solid choice for businesses looking for a reliable and versatile printer.',
+    pros: ['All-in-one functionality','High-quality printing','Connectivity options','Security features','Energy efficient'],
+    cons: ['High ink costs','Slow print speed','Limited paper capacity','Paper handling issues','Limited durability']
   }
   ];
     // 'Canon PIXMA TS9120', 
