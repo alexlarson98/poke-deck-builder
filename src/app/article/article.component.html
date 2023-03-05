@@ -1,0 +1,31 @@
+<div class="container">
+    
+    <div class="wrapper">
+        <p class="notice">
+            When you buy through our links, we may earn a commission. <a class="learn-more" href="#">Learn more.</a>
+        </p>
+        <div class="title">
+            <h1>{{ title }}</h1>
+        </div>
+        <p>{{ article_description }}</p>
+
+        <hr>
+        <div *ngFor="let item of items">
+            
+            <a class="item-title" routerLink="/article/furniture" routerLinkActive="active"><h1>{{ item.name }}</h1></a>
+
+            <a><img class="item-img" src="https://m.media-amazon.com/images/I/41FYkVPzrIL.jpg" alt=""></a>
+            <p>{{ item.description }}</p>
+            <h3>Pros</h3>
+            <ol>
+                <li *ngFor="let pro of item.pros">{{ pro }}</li>
+            </ol>
+            <h3>Cons</h3>
+            <ol>
+                <li *ngFor="let con of item.cons">{{ con }}</li>
+            </ol>
+        </div>
+
+    </div>
+    
+</div>

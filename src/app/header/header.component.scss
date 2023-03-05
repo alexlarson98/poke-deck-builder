@@ -2,11 +2,12 @@
     background-color: #000000;
     height: 140px;
     color: white;
+    font-size: 1.325rem;
   }
 
-  .header-top h1 {
+  .header-top img {
     margin-top: 0;
-    padding: 50px;
+    padding: 30px;
   }
 
   .link-wrapper {
@@ -43,7 +44,7 @@
     color: #000000;
     font-size: 16px;
     font-weight: bold;
-    text-transform: lowercase;
+    // text-transform: lowercase;
 }
   
   nav a:hover {
@@ -55,8 +56,9 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #f10fc0;
+    background-color: #ff72e0;
     border-radius:25px;
+    
 
     // shaddow
     box-shadow: -10px 10px   5px rgba(0,0,0,0.6);
@@ -153,6 +155,13 @@
     }
     nav ul li:hover > ul {
         display: none;
+    }
+
+    .header-top img {
+      margin-top: 0;
+      height: auto;
+      max-width: 300px;
+      padding: 40px 0 0 30px;
     }
   }
   
