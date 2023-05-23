@@ -1,0 +1,16 @@
+img {
+    max-height: 300px;
+    width: auto;
+    padding: 30px;
+}
+
+@media screen and (max-width: 1700px) {
+    .row-wrapper {
+        display: block;
+        justify-content: center;
+      }
+  }
+
+.card {
+    margin-bottom: 100px;
+}

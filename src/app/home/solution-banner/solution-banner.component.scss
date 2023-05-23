@@ -1,0 +1,12 @@
+@import '../../../assets/global-styles/colors.scss';
+
+.container {
+    color: white;
+    background-color: $dark-blue;
+    background-image: url('../../../assets/blue-background.jpg');
+    margin-bottom: 150px;
+    height: 250px;
+}
+.wrapper {
+    text-align: center;
+}

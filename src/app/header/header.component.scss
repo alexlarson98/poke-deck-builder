@@ -1,31 +1,32 @@
+@import '../../assets/global-styles/colors.scss';
+
 .header-top {
     background-color: #000000;
-    height: 140px;
+    height: 30px;
     color: white;
-    font-size: 1.325rem;
   }
 
-  .img-container img {
-    height: auto;
-    max-width: 450px;
-    margin-top: 0;
-    padding-left: 30px;
-    margin: 0;
-    
-  }
+.cool {
+  text-align: left;
+  margin-left: 100px;
+}
 
-  .link-wrapper {
-    display: inline-block;
-    width: 65%;
+  .row:first-child {
+    justify-content: flex-start;
+  }
+  
+  .row:last-child {
+    justify-content: flex-end;
+    padding-top: 15px;
   }
   
   .nav-container {
-    text-align: center;
+    // text-align: center;
     width: 100%;
   }
   
   header {
-    background-color: #0ff187;
+    // background-color: $light-blue;
     padding: 20px;
   }
   
@@ -34,8 +35,8 @@
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    white-space: nowrap; /* Prevents wrapping */
+    min-width: max-content; /* Adjusts width to fit content */
   }
   
   nav li {
@@ -48,11 +49,11 @@
     color: #000000;
     font-size: 16px;
     font-weight: bold;
-    text-transform: lowercase;
+    // text-transform: lowercase;
 }
   
   nav a:hover {
-    color: #ffffff;
+    color: $dark-blue;
   }
   
   nav ul ul {
@@ -60,8 +61,10 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #ff72e0;
-    border-radius:25px;
+    background-color: #fcfcfc;
+    border-radius:4px;
+    white-space: nowrap; /* Prevents wrapping */
+    min-width: max-content; /* Adjusts width to fit content */
     
 
     // shaddow
@@ -72,6 +75,7 @@
 
     opacity: 0;
     visibility: hidden;
+    left: -9999px;
     // transition OUT
     // transition: all 0.3s ease;
   }
@@ -90,8 +94,9 @@
     opacity: 1;
     visibility: visible;
     display: grid;
+    left: 0;
     // transition IN
-    transition: all 0.3s ease;
+    // transition: all 0.1s ease;
   }
   
   .menu-icon {
@@ -107,8 +112,9 @@
     top: 100%;
     left: 0;
     z-index: 1;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    // Uncomment to re-enable grid
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: repeat(3, 1fr);
   }
 
   .dropdown-items li {
@@ -118,7 +124,8 @@
 
   // cursor wiggle room for dropdown
   .top-element {
-    padding: 0 20px 30px 20px;
+    padding: 0 20px 35px 20px;
+    max-width: 200px;
   }
   
   @media screen and (max-width: 768px) {
@@ -166,6 +173,9 @@
       height: auto;
       max-width: 300px;
       padding: 30px 0 0 20px;
+    }
+    .cool {
+      margin: 0;
     }
   }
   

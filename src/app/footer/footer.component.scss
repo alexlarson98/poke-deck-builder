@@ -1,0 +1,63 @@
+@import '../../assets/global-styles/colors.scss';
+
+.footer-top {
+    background-color: #000000;
+    height: 2px;
+    color: white;
+    margin-top: 100px;
+  }
+
+.footer-content {
+    background-color: $dark-blue;
+    height: auto;
+}
+
+a, p, li {
+  color: $light-blue;
+  text-decoration: none;
+}
+
+img {
+  min-width: 200px;
+  width: 200px;
+  height: auto;
+  padding-top: 30px;
+}
+ul, li {
+  list-style: none;
+  padding: 0;
+}
+.copyright {
+  text-align: left;
+
+  margin-top: 100px;
+}
+
+img {
+  max-height: 500px;
+}
+.item {
+  text-align: left;
+  width: 33.3333%;
+  margin: 0;
+  // padding: 20px;
+}
+ul, img {
+  margin: 0;
+  padding: 0;
+  margin: 20px;
+}
+.supported-by {
+  margin: 50px 0 50px 0;
+}
+@media (max-width: 1300px) {
+  .item {
+    width: 50%;
+    text-align: center;
+  }
+}
+@media (max-width: 950px) {
+  .item {
+    width: 100%
+  }
+}

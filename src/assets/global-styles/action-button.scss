@@ -1,12 +1,13 @@
+@import '../../assets/global-styles/colors.scss';
 
 /* CSS */
 .button-56 {
   align-items: center;
-  background-color: #0ff187;
+  background-color: $dark-blue;
   border: 2px solid #111;
   border-radius: 8px;
   box-sizing: border-box;
-  color: #111;
+  color: white;
   cursor: pointer;
   display: flex;
   font-family: Inter,sans-serif;
@@ -24,6 +25,8 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   margin: 15px 30px 40px 30px;
+  white-space: nowrap; /* Prevents wrapping */
+  min-width: max-content;
 }
 
 .button-56:after {
@@ -46,7 +49,7 @@
 }
 
 .button-56:active {
-  background-color: #ff72e0;
+  background-color: $light-blue;
   outline: 0;
 }
 

@@ -1,0 +1,141 @@
+@import '../../../assets/global-styles/colors.scss';
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: $light-light-blue;
+    transition: width 0.3s ease;
+  }
+
+  .cool {
+    color: $dark-blue;
+  }
+  
+  .side-menu.minimized {
+    width: 73px;
+  }
+  
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .toggle-icon {
+    font-size: 24px;
+  }
+  .icon img {
+    width: 35px;
+  }
+  
+  .side-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .side-menu li {
+    padding: 10px;
+  }
+  
+  .side-menu li a {
+    text-decoration: none;
+    color: $dark-blue;
+    display: flex;
+    align-items: center;
+  }
+  
+  .side-menu .text {
+    display: inline;
+  }
+  
+  .side-menu li .menu-item:hover {
+    background-color: $light-blue;
+    border-radius: 5px;
+  }
+  .side-menu li a {
+    padding: 10px;
+  }
+
+
+  .minimized li a {
+    padding: 10px;
+  }
+  .minimized li .menu-item:hover {
+    background-color: transparent;
+  }
+
+
+
+
+
+
+
+
+
+
+  
+  
+  .arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    align-self: flex-end; /* Add this line */
+
+    position: absolute;
+    top: 18px;
+
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow {
+    width: 10px;
+    height: 10px;
+    border: solid #000;
+    border-width: 2px 2px 0 0;
+    display: inline-block;
+    
+  }
+  
+  .arrow-left {
+    transform: rotate(45deg);
+    right: 15px;
+
+  }
+  
+  .arrow-right {
+    transform: rotate(-135deg);
+    right: 0;
+
+  }
+  .vector-left {
+    margin: 0;
+  }
+  .vector-right {
+    margin-right: 10px;
+  }
+  
+  .arrow-container:hover .arrow {
+    border-color: #ff0000;
+  }
+  
+  .arrow-container.clicked .arrow {
+    animation: spin 0.5s ease-in-out;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

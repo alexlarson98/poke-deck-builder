@@ -3,12 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { ArticleComponent } from './article/article.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProductsComponent } from './products/products.component';
 
 const appRoutes: Routes = [
-  { path: 'article', component: ArticleComponent },
+  { path: 'products', component: ProductsComponent },
   { path: 'article/:id', component: ArticleComponent },
-  { path: 'home', component: HomeComponent },
-  { path: '',   redirectTo: '/home', pathMatch: 'full' },
+  { path: '',   component: HomeComponent, pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
 
