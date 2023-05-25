@@ -1,0 +1,54 @@
+@import '../../../assets/global-styles/customer-view.scss';
+@import '../../../assets/global-styles/colors.scss';
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    width: 95%;
+    // background-color: hsl(30, 100%, 97%);
+    // border-radius: 10px;
+    margin: 0;
+}
+
+.item {
+    width: 300px;
+    height: 300px;
+    text-align: left;
+    background-color: #faf0e6;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.item:hover {
+    transform: scale(1.06);
+  }
+.project-text {
+    padding: 10px;
+}
+.info-text {
+    color: #000;
+}
+.investable-projects {
+    margin-bottom: 5px;
+}
+.sub-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+a {
+    text-decoration: none;
+}
+.note {
+    padding: 20px;
+    font-size: 1rem;
+}
+p {
+    margin: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .item {
+        width: 220px;
+    }
+    
+  }

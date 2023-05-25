@@ -1,45 +1,56 @@
 <div class="side-menu" [ngClass]="{'minimized': isMinimized}">
     
     <ul>
+
+        <li class="logo">
+            <a *ngIf="!isMinimized" href="" class="center">
+                <h1 class="cool">
+                    daffodil
+                </h1>
+            </a>
+            <a *ngIf="isMinimized" href="" class="center">
+                <h1 class="cool">
+                    daff-
+                </h1>
+            </a>
+            <a *ngIf="isMinimized" href="" class="center bottom-title">
+                <h1 class="cool">
+                    odil
+                </h1>
+            </a>
+        </li>
         <li>
             <div class="arrow-container" (click)="toggleMenu()" [ngClass]="{'arrow-left': isMinimized, 'arrow-right': !isMinimized}">
                 <span class="arrow"></span>
             </div>
         </li>
-        <li class="logo">
-            <a href="" class="center">
-                <h1 class="cool">
-                    daffodil
-                </h1>
-            </a>
-        </li>
       <li>
-        <a routerLink="" class="menu-item">
-          <span class="icon" [ngClass]="{'vector-left': isMinimized, 'vector-right': !isMinimized}"><img src="../../../assets/home-vector.png" alt=""></span>
+        <a routerLink="/home" class="menu-item">
+          <span class="icon"><img src="../../../assets/home-vector.png" alt=""></span>
           <span class="text" *ngIf="!isMinimized">Home</span>
         </a>
       </li>
       <li>
-        <a routerLink="" class="menu-item">
-          <span class="icon" [ngClass]="{'vector-left': isMinimized, 'vector-right': !isMinimized}"><img src="../../../assets/market-vector.png" alt=""></span>
+        <a routerLink="/marketplace" class="menu-item">
+          <span class="icon"><img src="../../../assets/market-vector.png" alt=""></span>
           <span class="text" *ngIf="!isMinimized">Marketplace</span>
         </a>
       </li>
       <li>
         <a routerLink="/products" class="menu-item">
-          <span class="icon" [ngClass]="{'vector-left': isMinimized, 'vector-right': !isMinimized}"><img src="../../../assets/pie-chart-vector.png" alt=""></span>
+          <span class="icon"><img src="../../../assets/pie-chart-vector.png" alt=""></span>
           <span class="text" *ngIf="!isMinimized">Data</span>
         </a>
       </li>
       <li>
         <a routerLink="/products" class="menu-item">
-          <span class="icon" [ngClass]="{'vector-left': isMinimized, 'vector-right': !isMinimized}"><img src="../../../assets/calculator-vector.png" alt=""></span>
+          <span class="icon"><img src="../../../assets/calculator-vector.png" alt=""></span>
           <span class="text" *ngIf="!isMinimized">Calculate</span>
         </a>
       </li>
       <li>
         <a routerLink="/products" class="menu-item">
-          <span class="icon" [ngClass]="{'vector-left': isMinimized, 'vector-right': !isMinimized}"><img src="../../../assets/track-vector.png" alt=""></span>
+          <span class="icon"><img src="../../../assets/track-vector.png" alt=""></span>
           <span class="text" *ngIf="!isMinimized">Track</span>
         </a>
       </li>

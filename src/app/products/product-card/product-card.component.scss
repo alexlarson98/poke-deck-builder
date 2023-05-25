@@ -9,6 +9,9 @@ img {
         display: block;
         justify-content: center;
       }
+    img {
+        max-width: 100%; 
+    }
   }
 
 .card {

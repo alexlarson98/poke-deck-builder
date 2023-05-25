@@ -8,6 +8,7 @@
     width: 200px;
     background-color: $light-light-blue;
     transition: width 0.3s ease;
+    z-index: 2;
   }
 
   .cool {
@@ -68,6 +69,9 @@
   .minimized li .menu-item:hover {
     background-color: transparent;
   }
+  .minimized li a.center {
+    padding: 0;
+  }
 
 
 
@@ -90,7 +94,6 @@
     align-self: flex-end; /* Add this line */
 
     position: absolute;
-    top: 18px;
 
     transition: transform 0.3s ease;
   }
@@ -99,26 +102,31 @@
     width: 10px;
     height: 10px;
     border: solid #000;
-    border-width: 2px 2px 0 0;
-    display: inline-block;
-    
+    border-width: 3px 3px 0 0;
   }
   
   .arrow-left {
     transform: rotate(45deg);
-    right: 15px;
+    left: 60px;
+    background-color: $light-light-blue;
+    border-radius: 100px;
+    top: 110px;
 
   }
   
   .arrow-right {
     transform: rotate(-135deg);
-    right: 0;
+    left: 185px;
+    background-color: $light-light-blue;
+    border-radius: 20px;
+    top: 90px;
+
 
   }
-  .vector-left {
+  .minimized .menu-item span {
     margin: 0;
   }
-  .vector-right {
+  .side-menu .menu-item span {
     margin-right: 10px;
   }
   
