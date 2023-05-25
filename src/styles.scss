@@ -1,11 +1,13 @@
 @import './assets/global-styles/action-button.scss';
 @import './assets/global-styles/cards.scss';
+@import './assets/global-styles/customer-view.scss';
 
 /* You can add global styles to this file, and also import other style files */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Galano', sans-serif;
+    overflow-x: hidden;
 }
 
 hr {
@@ -68,10 +70,10 @@ hr {
 
   @media screen and (max-width: 768px) {
     .wrapper {
-        max-width: 75%;
+        max-width: 100%;
     }
     img {
-        max-width: 100%;  
+        // max-width: 100%;  
         height: auto;  
     }
     h1, h2, h3, h4 {

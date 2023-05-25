@@ -1,0 +1,43 @@
+@import '../global-styles/colors.scss';
+.customer-view-wrapper {
+    left: 200px;
+    position: relative;
+    z-index: 0;
+    margin-left: 50px;
+    margin-right: 200px;
+}
+.top-note {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    max-width: 800px;
+}
+.top-note p{
+    margin-left: 20px;
+}
+p {
+    margin: 0;
+}
+.link {
+    text-decoration: none;
+    color: $dark-blue;
+}
+.icon {
+    height: 50px;
+}
+.space {
+    height: 40px;
+}
+@media screen and (max-width: 768px) {
+    .customer-view-wrapper {
+        left: 73px;
+        margin-right: 73px;
+        margin-left: 73px;
+        position: relative;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .customer-view-wrapper {
+        margin-left: 20px;
+    }
+  }
