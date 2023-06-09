@@ -1,12 +1,18 @@
+@import '../../../assets/global-styles/colors.scss';
 .wrapper {
     width: 65%;
 }
+.container {
+    padding-top: 150px;
+    background-color: $light-light-blue;
+    color: $dark-blue;
+}
 .item {
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 img {
-    max-height: 300px;
+    max-height: 500px;
     max-width: 100%;
 }
 p {

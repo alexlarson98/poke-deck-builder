@@ -1,3 +1,5 @@
+@import '../../../assets/global-styles/colors.scss';
+
 img {
     max-width: 100%;
     height: auto;
@@ -5,5 +7,8 @@ img {
   }
 
 .container {
-  margin-bottom: 200px;
+  padding-bottom: 200px;
+  background-color: $light-blue;
+  z-index: 1;
+  position: relative;
 }

@@ -1,0 +1,22 @@
+.status-button {
+    cursor: pointer;
+    font-family: 'Galano', sans-serif;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    white-space: nowrap; /* Prevents wrapping */
+    min-width: max-content; /* Adjusts width to fit content */
+}
+
+.complete {
+    background-color: $light-good;
+    border: 1px solid $heavy-good;
+}
+.overdue {
+    background-color: $light-bad;
+    border: 1px solid $heavy-bad;
+}
+.future {
+    background-color: $light-blue;
+    border: 1px solid $dark-blue;
+}

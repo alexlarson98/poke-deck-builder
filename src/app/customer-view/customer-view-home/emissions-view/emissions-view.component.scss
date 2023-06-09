@@ -1,0 +1,40 @@
+@import '../../../../assets/global-styles/colors.scss';
+
+.wrapper {
+    width: 90%;
+}
+.item {
+    width: 300px;
+    height: 100px;
+}
+.item p {
+    margin: 0;
+}
+.item h1 {
+    margin: 5px;
+}
+.how {
+    font-size: 0.8rem;
+}
+.emissions-card .how {
+    color: #fff;
+}
+.emissions-card.target-card .how {
+    color: #000;
+}
+.emissions-card {
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px;
+}
+.target-card {
+    background-color: $light-blue;
+    color: #000;
+}
+@media screen and (max-width: 500px) {
+    .item {
+        width: 220px;
+    }
+    
+  }

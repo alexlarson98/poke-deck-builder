@@ -1,5 +1,4 @@
 @import '../../../assets/global-styles/customer-view.scss';
-@import '../../../assets/global-styles/colors.scss';
 img {
     max-width: 100%;
 }
@@ -17,11 +16,7 @@ img {
     text-align: left;
     background-color: #faf0e6;
     border-radius: 10px;
-    transition: transform 0.3s ease;
 }
-.item:hover {
-    transform: scale(1.06);
-  }
 .project-text {
     padding: 10px;
 }

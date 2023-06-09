@@ -1,6 +1,8 @@
 @import './assets/global-styles/action-button.scss';
 @import './assets/global-styles/cards.scss';
-@import './assets/global-styles/customer-view.scss';
+@import './assets/global-styles/transitions.scss';
+@import './assets/global-styles/colors.scss';
+@import './assets/global-styles/buttons.scss';
 
 /* You can add global styles to this file, and also import other style files */
 body {
@@ -58,6 +60,9 @@ hr {
   }
   .row {
     display: flex;
+  }
+  a {
+    text-decoration: none;
   }
 
   .cool {

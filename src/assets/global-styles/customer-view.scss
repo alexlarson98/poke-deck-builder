@@ -15,6 +15,9 @@
 .top-note p{
     margin-left: 20px;
 }
+.top-title {
+    margin-top: 50px;
+}
 p {
     margin: 0;
 }
@@ -28,6 +31,13 @@ p {
 .space {
     height: 40px;
 }
+.levitate {
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.levitate:hover {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
 @media screen and (max-width: 768px) {
     .customer-view-wrapper {
         left: 73px;

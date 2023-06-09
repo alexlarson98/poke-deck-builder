@@ -1,0 +1,24 @@
+.fade-in-rise {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeInRiseAnimation 1s ease-in-out forwards;
+  }
+
+  .fade-in-rise-delay {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeInRiseAnimation 1s ease-in-out forwards;
+    animation-delay: 1s;
+  }
+  
+  
+  @keyframes fadeInRiseAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
